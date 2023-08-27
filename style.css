@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Baloo Da 2", cursive;
+  }
+}
+
+@layer components {
+  .card {
+    @apply flex h-28 items-center justify-center rounded-lg border-r-2 border-b-4 border-[#0f202a] bg-[#1f3540] text-6xl uppercase
+  }
+
+  .player-x {
+    @apply font-extrabold text-player-x
+  }
+
+  .player-o {
+    @apply font-extrabold text-player-o
+  }
+}
